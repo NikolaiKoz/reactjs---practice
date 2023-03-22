@@ -1,12 +1,17 @@
+import styles from './VideoItem.module.scss';
+const { container, durationStyle } = styles;
 const VideoItem = ({ title, description, uploadDate, duration }) => {
-	const seconds = duration % 60;
+	let seconds = duration % 60;
+
+	if (seconds < 10) seconds += '0';
+
 	const minutes = Math.floor(duration / 60);
 
 	return (
-		<div>
+		<div className={container}>
 			<h3>{title}</h3>
 			<div>
-				<span>
+				<span className={durationStyle}>
 					{minutes}:{seconds}
 				</span>
 				<br />

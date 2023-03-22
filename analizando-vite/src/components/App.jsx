@@ -1,8 +1,11 @@
-import VideoItem from './components/VideoItem';
-import VideoList from './components/VideoList';
+import styles from './App.module.scss';
+import VideoItem from './VideoItem/VideoItem';
+import VideoList from './VideoList/VideoList';
+
+const { container } = styles;
 
 const App = () => (
-	<>
+	<div className={container}>
 		<h1>Experimentando con React y Vit</h1>
 		<VideoList title='Titulo de la lista'>
 			<VideoItem
@@ -46,8 +49,8 @@ const App = () => (
 				description='ejemplo description'
 			/>
 		</VideoList>
-        <VideoList/>
-	</>
+		<VideoList />
+	</div>
 );
 
 export default App;
