@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useState } from "react";
+import UserDetail from "./UserDetail/UserDetail";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
       <button onClick={() => setCount(count + 1)}>Incrementar</button>
       <p>{count}</p>
       <p>{doble()}</p>
+      <UserDetail UserId="9" />
     </div>
   );
 }
