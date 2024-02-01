@@ -22,7 +22,7 @@ Para que eslint y prettier no se peleen intalo lo siguiente
 
 Creo los dos escripts
 
-    	"format": "prettier --write ."
+    	"format": "prettier --write .",
     	"lint": "eslint --fix . --ext .js,.jsx"
 
 Para utilizar sass con vite solo debo instalar el siguiente modulo
